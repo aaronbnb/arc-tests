@@ -6,10 +6,12 @@ shadow1.appendChild(heading);
 
 const host2 = document.querySelector("#host2");
 const shadow2 = host2.attachShadow({ mode: "open" });
+const main = document.createElement('main');
 const button = document.createElement("button");
 button.setAttribute('tabindex', '2');
 button.textContent = 'Button with a positive tabindex'
-shadow2.appendChild(button);
+main.appendChild(button)
+shadow2.appendChild(main);
 
 const host3 = document.querySelector("#host3");
 const shadow3 = host3.attachShadow({ mode: "open" });
