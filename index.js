@@ -11,7 +11,7 @@ button.setAttribute('tabindex', '2');
 button.textContent = 'Button with a positive tabindex'
 shadow2.appendChild(button);
 
-const host3 = document.querySelector("#host3);
+const host3 = document.querySelector("#host3");
 const shadow3 = host3.attachShadow({ mode: "open" });
 const span = document.createElement("span");
 span.setAttribute('aria-label', 'Spans do not consistently support aria-label attributes');
