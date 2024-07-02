@@ -39,6 +39,19 @@
 		<option value="D">Diamonds</option>
 	</select>
 </div>
+<!-- style attribute includes forced line-height property -->
+<p id="fail1" style="line-height: 1.5 !important;">Banana error</p>
+ 
+<!-- style attribute includes forced letter-spacing property -->
+<p id="fail2" style="letter-spacing: 100em !important;">We need more cheeeeeeessseeeee!!!</p>
+ 
+<!-- style attribute includes forced word-spacing property -->
+<p id="fail3" style="word-spacing: -.4ch !important;">The cheese grater is in the way!</p>
+ 
+<!-- style attribute a word-spacing property, a forced letter-spacing property, and a line-height -->
+<p id="fail4" style="word-spacing: 200%; letter-spacing: 50rem !important; line-height: 3;">Yo, Darth Vader</p>
+
+	  
 	  <script src="index.js"></script>
   </body>
 </html>
